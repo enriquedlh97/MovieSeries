@@ -17,7 +17,7 @@ struct MovieSeriesView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MovieSeriesView_Previews: PreviewProvider {
     static var previews: some View {
         MovieSeriesView()
     }
