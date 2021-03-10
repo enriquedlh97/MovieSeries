@@ -11,10 +11,19 @@ struct MovieSeriesView: View {
     var body: some View {
         NavigationView {
             TabView {
-                MoviesView()
-                
+                MovieView()
+                    .tabItem {
+                        Label("Movies", systemImage: "film.fill")
+                    }
                 SeriesView()
+                    .tabItem{
+                        Label("Series", systemImage: "play.tv.fill")
+                    }
             }
+        }
+        .accentColor(Color("DraculaOrchid"))
+        .onAppear {
+           UITabBar.appearance().barTintColor = UIColor(Color("ChiGong"))
         }
     }
 }

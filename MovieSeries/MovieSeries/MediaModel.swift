@@ -37,4 +37,3 @@ class MediaModel: ObservableObject {
     }
     
 }
-view rawMediaModel.swift hosted with ❤ by GitHub
