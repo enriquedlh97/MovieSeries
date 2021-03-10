@@ -9,8 +9,11 @@ import SwiftUI
 
 struct MovieSeriesView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            TabView {
+                
+            }
+        }
     }
 }
 
