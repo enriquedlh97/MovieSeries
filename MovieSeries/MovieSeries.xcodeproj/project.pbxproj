@@ -16,6 +16,7 @@
 		533EC13925F859C100D45DCA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EC13825F859C100D45DCA /* Fonts.swift */; };
 		533EC13C25F85C7000D45DCA /* NavigationBarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EC13B25F85C7000D45DCA /* NavigationBarModifier.swift */; };
 		533EC13F25F85D5200D45DCA /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EC13E25F85D5200D45DCA /* Media.swift */; };
+		533EC14225F85DDA00D45DCA /* Enumerators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EC14125F85DDA00D45DCA /* Enumerators.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		533EC13825F859C100D45DCA /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		533EC13B25F85C7000D45DCA /* NavigationBarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarModifier.swift; sourceTree = "<group>"; };
 		533EC13E25F85D5200D45DCA /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		533EC14125F85DDA00D45DCA /* Enumerators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerators.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				533EC12525F857C300D45DCA /* Assets.xcassets */,
 				533EC13B25F85C7000D45DCA /* NavigationBarModifier.swift */,
 				533EC13E25F85D5200D45DCA /* Media.swift */,
+				533EC14125F85DDA00D45DCA /* Enumerators.swift */,
 				533EC12A25F857C300D45DCA /* Info.plist */,
 				533EC13825F859C100D45DCA /* Fonts.swift */,
 				533EC12725F857C300D45DCA /* Preview Content */,
@@ -168,6 +171,7 @@
 				533EC13C25F85C7000D45DCA /* NavigationBarModifier.swift in Sources */,
 				533EC12225F857C200D45DCA /* MovieSeriesApp.swift in Sources */,
 				533EC13F25F85D5200D45DCA /* Media.swift in Sources */,
+				533EC14225F85DDA00D45DCA /* Enumerators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
