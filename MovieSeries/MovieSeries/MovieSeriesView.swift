@@ -11,7 +11,9 @@ struct MovieSeriesView: View {
     var body: some View {
         NavigationView {
             TabView {
+                MoviesView()
                 
+                SeriesView()
             }
         }
     }
