@@ -12,6 +12,7 @@ struct MovieView: View {
     @StateObject var media: MediaModel
     
     var body: some View {
+        GeometryReader { geo in
         ZStack {
             Color("BelizeHole")
             VStack {
@@ -24,13 +25,17 @@ struct MovieView: View {
                     HStack {
                         ForEach(media.movies) {
                             movie in MediaCellView(media: movie)
+                                .frame(width: geo.size.width)
                         }
                     }
                 }
             }
         }
     }
+        .edgesIgnoringSafeArea(.all)
+    }
 }
+
 
 struct MovieView_Previews: PreviewProvider {
     static var previews: some View {
