@@ -12,7 +12,15 @@ struct MediaCellView: View {
     var media: Media
     
     var body: some View {
-        Text(media.name).padding()
+        VStack {
+            ZStack {
+                VStack {
+                    Image(media.images[0])
+                        .resizable()
+                        .scaledToFit()
+                }
+            }
+        }
     }
 }
 
