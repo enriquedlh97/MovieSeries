@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MovieView: View {
+    
+    @StateObject var media: MediaModel
+    
     var body: some View {
         ZStack {
             Color("BelizeHole")
@@ -19,6 +22,9 @@ struct MovieView: View {
             VStack {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
+                        ForEach(media.movies) {
+                            movie in Text(movie.name)
+                        }
                     }
                 }
             }
@@ -28,6 +34,6 @@ struct MovieView: View {
 
 struct MovieView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieView()
+        MovieView(media: MediaModel())
     }
 }

@@ -14,7 +14,7 @@ struct MovieSeriesView: View {
     var body: some View {
         NavigationView {
             TabView {
-                MovieView()
+                MovieView(media: media)
                     .tabItem {
                         Label("Movies", systemImage: "film.fill")
                     }
