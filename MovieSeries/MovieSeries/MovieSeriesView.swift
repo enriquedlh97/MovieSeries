@@ -18,7 +18,7 @@ struct MovieSeriesView: View {
                     .tabItem {
                         Label("Movies", systemImage: "film.fill")
                     }
-                SeriesView()
+                SeriesView(media: media)
                     .tabItem{
                         Label("Series", systemImage: "play.tv.fill")
                     }
