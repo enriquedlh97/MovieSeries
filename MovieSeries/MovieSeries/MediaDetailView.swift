@@ -31,7 +31,7 @@ struct MediaDetailView: View {
                             .padding(.top, 10)
                         NavigationLink(
                         
-                            destination: Text("Destination"),
+                            destination: WebView(html: media.trailer),
                             label: {
                                 Label("Trailer", systemImage: "play.tv.fill")
                                     .font(.Roboto(size: 20))
