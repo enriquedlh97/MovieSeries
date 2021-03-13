@@ -29,12 +29,18 @@ struct MediaDetailView: View {
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 20)
                             .padding(.top, 10)
-                        Label("Trailer", systemImage: "play.tv.fill")
-                            .font(.Roboto(size: 20))
-                            .foregroundColor(Color("Alizarin"))
-                            .multilineTextAlignment(.center)
-                            .padding(.horizontal, 20)
-                            .padding(.top, 10)
+                        NavigationLink(
+                        
+                            destination: Text("Destination"),
+                            label: {
+                                Label("Trailer", systemImage: "play.tv.fill")
+                                    .font(.Roboto(size: 20))
+                                    .foregroundColor(Color("Alizarin"))
+                                    .multilineTextAlignment(.center)
+                                    .padding(.horizontal, 20)
+                                    .padding(.top, 10)
+                            })
+                        
                     }
                     VStack {
                         TabView{
