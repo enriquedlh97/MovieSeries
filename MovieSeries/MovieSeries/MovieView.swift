@@ -26,8 +26,13 @@ struct MovieView: View {
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack {
                                 ForEach(media.movies) {
-                                    movie in MediaCellView(media: movie)
-                                        .frame(width: geo.size.width)
+                                    movie in
+                                    NavigationLink(
+                                        destination: MediaDetailView(),
+                                        label: {
+                                            MediaCellView(media: movie)
+                                                .frame(width: geo.size.width)
+                                        })
                                 }
                             }
                         }
