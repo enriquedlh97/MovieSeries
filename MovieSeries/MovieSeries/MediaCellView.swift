@@ -23,17 +23,17 @@ struct MediaCellView: View {
                             .cornerRadius(40)
                             .overlay(
                                 ZStack {
-                            RoundedRectangle(cornerRadius: 33)
-                                .stroke(Color("Alizarin"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
-                                VStack {
-                                    Spacer()
-                                    HStack {
-                                    ScoreView(score: media.score)
+                                    RoundedRectangle(cornerRadius: 33)
+                                        .stroke(Color("Alizarin"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
+                                    VStack {
                                         Spacer()
+                                        HStack {
+                                            ScoreView(score: media.score)
+                                            Spacer()
+                                        }
+                                        .padding(.leading, 40)
+                                        .padding(.bottom, -35)
                                     }
-                                    .padding(.leading, 40)
-                                    .padding(.bottom, -35)
-                                }
                                 }
                             )
                             .padding(.horizontal, 20)
@@ -41,6 +41,26 @@ struct MediaCellView: View {
                     }
                     
                 }
+                VStack {
+                    HStack {
+                        Text(media.name)
+                            .font(.Roboto(size: 24))
+                        Text("(\(String(media.year)))")
+                            .font(.Roboto(size: 20))
+                        Text(media.duration)
+                            .font(.Roboto(size: 20))
+                        Spacer()
+                    }
+                    
+                    .padding(.top, 40)
+                    HStack {
+                        Text(media.headline)
+                            .font(.Roboto(size: 20))
+                        Spacer()
+                    }
+                }
+                .foregroundColor(Color("Alizarin"))
+                .padding(.leading, 20)
             }
         }
     }
