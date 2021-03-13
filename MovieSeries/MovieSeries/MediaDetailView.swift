@@ -27,7 +27,7 @@ struct MediaDetailView: View {
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text(media.name)
-                        .font(.title)
+                        .font(.Roboto(size: 24))
                         .foregroundColor(Color("DraculaOrchid"))
                 }
             }
