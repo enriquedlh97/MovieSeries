@@ -23,7 +23,7 @@ struct MovieView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
                         ForEach(media.movies) {
-                            movie in Text(movie.name).padding()
+                            movie in MediaCellView(media: movie)
                         }
                     }
                 }
