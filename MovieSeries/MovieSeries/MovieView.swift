@@ -32,8 +32,9 @@ struct MovieView: View {
                             }
                         }
                     }
+                    .padding(.top, -6)
                 }
-                .padding(.bottom, 100)
+                .padding(.bottom, 80)
             }
             .edgesIgnoringSafeArea(.all)
         }
