@@ -20,12 +20,13 @@ struct MediaCellView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: geo.size.width-40)
-                            .cornerRadius(20)
+                            .cornerRadius(40)
                             .overlay(
                             RoundedRectangle(cornerRadius: 33)
                                 .stroke(Color("Alizarin"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
                             )
                             .padding(.horizontal, 20)
+                            .padding(.top,10)
                     }
                 }
             }
