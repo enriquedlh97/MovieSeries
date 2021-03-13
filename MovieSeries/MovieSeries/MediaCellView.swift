@@ -18,6 +18,6 @@ struct MediaCellView: View {
 
 struct MediaCellView_Previews: PreviewProvider {
     static var previews: some View {
-        MediaCellView()
+        MediaCellView(media: Media.defaultMedia)
     }
 }
