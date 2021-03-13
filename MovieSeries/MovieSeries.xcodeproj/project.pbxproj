@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5332403925FD639A007156B4 /* MediaCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332403825FD639A007156B4 /* MediaCellView.swift */; };
+		5332403C25FD63E9007156B4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5332403B25FD63E9007156B4 /* Extensions.swift */; };
 		533EC12225F857C200D45DCA /* MovieSeriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EC12125F857C200D45DCA /* MovieSeriesApp.swift */; };
 		533EC12425F857C200D45DCA /* MovieSeriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533EC12325F857C200D45DCA /* MovieSeriesView.swift */; };
 		533EC12625F857C300D45DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533EC12525F857C300D45DCA /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		5332403825FD639A007156B4 /* MediaCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCellView.swift; sourceTree = "<group>"; };
+		5332403B25FD63E9007156B4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		533EC11E25F857C200D45DCA /* MovieSeries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSeries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		533EC12125F857C200D45DCA /* MovieSeriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSeriesApp.swift; sourceTree = "<group>"; };
 		533EC12325F857C200D45DCA /* MovieSeriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSeriesView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				533EC12325F857C200D45DCA /* MovieSeriesView.swift */,
 				533EC14B25F8613F00D45DCA /* MovieView.swift */,
 				5332403825FD639A007156B4 /* MediaCellView.swift */,
+				5332403B25FD63E9007156B4 /* Extensions.swift */,
 				533EC14E25F8617300D45DCA /* SeriesView.swift */,
 				533EC13125F8584700D45DCA /* Colors.xcassets */,
 				533EC12525F857C300D45DCA /* Assets.xcassets */,
@@ -187,6 +190,7 @@
 				533EC14C25F8613F00D45DCA /* MovieView.swift in Sources */,
 				5332403925FD639A007156B4 /* MediaCellView.swift in Sources */,
 				533EC13F25F85D5200D45DCA /* Media.swift in Sources */,
+				5332403C25FD63E9007156B4 /* Extensions.swift in Sources */,
 				533EC14225F85DDA00D45DCA /* Enumerators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
