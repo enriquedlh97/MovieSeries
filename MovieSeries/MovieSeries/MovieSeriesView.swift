@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MovieSeriesView: View {
+    
+    @StateObject var media = MediaModel()
+    
     var body: some View {
         NavigationView {
             TabView {
