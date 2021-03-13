@@ -8,13 +8,35 @@
 import SwiftUI
 
 struct MediaDetailView: View {
+    
+    var media: Media
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { geo in
+            VStack {
+                VStack {
+                    Text(media.name)
+                        .font(.Roboto(size: 24))
+                        .foregroundColor(Color("Alizarin"))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 20)
+                }
+            }
+            .navigationBarTitle(media.name, displayMode: .inline)
+            .navigationBarColor(UIColor(named: "MintLeaf"))
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text(media.name)
+                        .font(.title)
+                        .foregroundColor(Color("DraculaOrchid"))
+                }
+            }
+        }
     }
 }
 
 struct MediaDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        MediaDetailView()
+        MediaDetailView(media: Media.defaultMedia)
     }
 }

@@ -28,7 +28,7 @@ struct MovieView: View {
                                 ForEach(media.movies) {
                                     movie in
                                     NavigationLink(
-                                        destination: MediaDetailView(),
+                                        destination: MediaDetailView(media: movie),
                                         label: {
                                             MediaCellView(media: movie)
                                                 .frame(width: geo.size.width)
