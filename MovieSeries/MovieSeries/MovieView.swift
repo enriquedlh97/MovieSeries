@@ -13,26 +13,29 @@ struct MovieView: View {
     
     var body: some View {
         GeometryReader { geo in
-        ZStack {
-            Color("BelizeHole")
-            VStack {
-                Text("Movies")
-                    .font(.Roboto(size: 48))
-                    .foregroundColor(Color("Alizarin"))
-            }
-            VStack {
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack {
-                        ForEach(media.movies) {
-                            movie in MediaCellView(media: movie)
-                                .frame(width: geo.size.width)
+            ZStack {
+                Color("BelizeHole")
+                VStack {
+                    VStack {
+                        Text("Movies")
+                            .font(.Roboto(size: 48))
+                            .foregroundColor(Color("Alizarin"))
+                            .padding(.top, 40)
+                    }
+                    VStack {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack {
+                                ForEach(media.movies) {
+                                    movie in MediaCellView(media: movie)
+                                        .frame(width: geo.size.width)
+                                }
+                            }
                         }
                     }
                 }
             }
+            .edgesIgnoringSafeArea(.all)
         }
-    }
-        .edgesIgnoringSafeArea(.all)
     }
 }
 
