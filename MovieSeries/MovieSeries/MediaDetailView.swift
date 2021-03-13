@@ -35,7 +35,7 @@ struct MediaDetailView: View {
                             ForEach(media.images, id: \.self) {
                                 image in
                                 
-                                Image(media.images[0])
+                                Image(image)
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: geo.size.width-40)
