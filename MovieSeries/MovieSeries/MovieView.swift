@@ -42,7 +42,7 @@ struct MovieView: View {
                 .padding(.bottom, 80)
             }
             .edgesIgnoringSafeArea(.all)
-            .navigationBarTitle("Movies", displayMode: .inline)
+
         }
     }
 }

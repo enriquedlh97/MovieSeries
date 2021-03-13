@@ -35,10 +35,12 @@ struct SeriesView: View {
                     .padding(.top, -6)
                 }
                 .padding(.bottom, 80)
+                
             }
             .edgesIgnoringSafeArea(.all)
-            .navigationBarTitle("Series", displayMode: .inline)
+            
         }
+        
     }
 }
 
