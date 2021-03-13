@@ -17,11 +17,18 @@ struct MediaDetailView: View {
             VStack {
                 ScrollView(.vertical, showsIndicators: false) {
                 VStack {
-                    Text(media.name)
+                    Text(media.overview)
                         .font(.Roboto(size: 24))
                         .foregroundColor(Color("Alizarin"))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
+                        .padding(.top, 6)
+                    Text(media.genre)
+                        .font(.Roboto(size: 20))
+                        .foregroundColor(Color("Alizarin"))
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 20)
+                        .padding(.top, 10)
                 }
                 }
             }
