@@ -12,7 +12,7 @@ struct MediaCellView: View {
     var media: Media
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(media.name).padding()
     }
 }
 
