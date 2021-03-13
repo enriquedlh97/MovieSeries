@@ -12,12 +12,21 @@ struct MediaCellView: View {
     var media: Media
     
     var body: some View {
-        VStack {
-            ZStack {
-                VStack {
-                    Image(media.images[0])
-                        .resizable()
-                        .scaledToFit()
+        GeometryReader { geo in
+            VStack {
+                ZStack {
+                    VStack {
+                        Image(media.images[0])
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: geo.size.width-40)
+                            .cornerRadius(20)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 33)
+                                .stroke(Color("Alizarin"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
+                            )
+                            .padding(.horizontal, 20)
+                    }
                 }
             }
         }
