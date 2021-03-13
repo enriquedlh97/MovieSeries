@@ -13,13 +13,16 @@ struct MediaDetailView: View {
     
     var body: some View {
         GeometryReader { geo in
+            
             VStack {
+                ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     Text(media.name)
                         .font(.Roboto(size: 24))
                         .foregroundColor(Color("Alizarin"))
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 20)
+                }
                 }
             }
             .navigationBarTitle(media.name, displayMode: .inline)
