@@ -16,20 +16,44 @@ struct MediaDetailView: View {
             
             VStack {
                 ScrollView(.vertical, showsIndicators: false) {
-                VStack {
-                    Text(media.overview)
-                        .font(.Roboto(size: 24))
-                        .foregroundColor(Color("Alizarin"))
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
-                        .padding(.top, 6)
-                    Text(media.genre)
-                        .font(.Roboto(size: 20))
-                        .foregroundColor(Color("Alizarin"))
-                        .multilineTextAlignment(.center)
-                        .padding(.horizontal, 20)
-                        .padding(.top, 10)
-                }
+                    VStack {
+                        Text(media.overview)
+                            .font(.Roboto(size: 24))
+                            .foregroundColor(Color("Alizarin"))
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 20)
+                            .padding(.top, 6)
+                        Text(media.genre)
+                            .font(.Roboto(size: 20))
+                            .foregroundColor(Color("Alizarin"))
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 20)
+                            .padding(.top, 10)
+                    }
+                    VStack {
+                        TabView{
+                            ForEach(media.images, id: \.self) {
+                                image in
+                                
+                                Image(media.images[0])
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: geo.size.width-40)
+                                    .cornerRadius(40)
+                                    .overlay(
+                                        ZStack {
+                                            RoundedRectangle(cornerRadius: 33)
+                                                .stroke(Color("Alizarin"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
+                                        }
+                                    )
+                                    .padding(.horizontal, 20)
+                                    .padding(.vertical,10)
+                                
+                                
+                            }
+                        }
+                        .tabViewStyle(PageTabViewStyle())
+                    }
                 }
             }
             .navigationBarTitle(media.name, displayMode: .inline)
