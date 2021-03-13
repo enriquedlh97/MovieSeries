@@ -22,12 +22,24 @@ struct MediaCellView: View {
                             .frame(width: geo.size.width-40)
                             .cornerRadius(40)
                             .overlay(
+                                ZStack {
                             RoundedRectangle(cornerRadius: 33)
                                 .stroke(Color("Alizarin"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
+                                VStack {
+                                    Spacer()
+                                    HStack {
+                                    ScoreView(score: media.score)
+                                        Spacer()
+                                    }
+                                    .padding(.leading, 40)
+                                    .padding(.bottom, -35)
+                                }
+                                }
                             )
                             .padding(.horizontal, 20)
                             .padding(.top,10)
                     }
+                    
                 }
             }
         }
