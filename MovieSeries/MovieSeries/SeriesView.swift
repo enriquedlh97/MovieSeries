@@ -37,6 +37,7 @@ struct SeriesView: View {
                 .padding(.bottom, 80)
             }
             .edgesIgnoringSafeArea(.all)
+            .navigationBarTitle("Series", displayMode: .inline)
         }
     }
 }
