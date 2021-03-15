@@ -24,9 +24,9 @@ struct MovieSeriesView: View {
                     }
             }
         }
-        .accentColor(Color("DraculaOrchid"))
+        .accentColor(Color("Clouds"))
         .onAppear {
-           UITabBar.appearance().barTintColor = UIColor(Color("ChiGong"))
+           UITabBar.appearance().barTintColor = UIColor(Color("DraculaOrchid"))
         }
     }
 }
