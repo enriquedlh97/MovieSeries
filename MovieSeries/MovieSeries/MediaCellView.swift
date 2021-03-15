@@ -24,7 +24,7 @@ struct MediaCellView: View {
                             .overlay(
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 33)
-                                        .stroke(Color("Alizarin"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
+                                        .stroke(Color("SwanWHite"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
                                     VStack {
                                         Spacer()
                                         HStack {
@@ -59,7 +59,7 @@ struct MediaCellView: View {
                         Spacer()
                     }
                 }
-                .foregroundColor(Color("Alizarin"))
+                .foregroundColor(Color("Clouds"))
                 .padding(.leading, 20)
             }
         }
