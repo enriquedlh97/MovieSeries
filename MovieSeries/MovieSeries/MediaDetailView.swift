@@ -19,13 +19,13 @@ struct MediaDetailView: View {
                     VStack {
                         Text(media.overview)
                             .font(.Roboto(size: 24))
-                            .foregroundColor(Color("Alizarin"))
+                            .foregroundColor(Color("Clouds"))
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 20)
                             .padding(.top, 6)
                         Text(media.genre)
                             .font(.Roboto(size: 20))
-                            .foregroundColor(Color("Alizarin"))
+                            .foregroundColor(Color("Clouds"))
                             .multilineTextAlignment(.center)
                             .padding(.horizontal, 20)
                             .padding(.top, 10)
@@ -35,8 +35,9 @@ struct MediaDetailView: View {
                             label: {
                                 Label("Trailer", systemImage: "play.tv.fill")
                                     .font(.Roboto(size: 20))
-                                    .foregroundColor(Color("Alizarin"))
+                                    .foregroundColor(Color("SwanWhite"))
                                     .multilineTextAlignment(.center)
+                                    .background(Color("DraculaOrchid"))
                                     .padding(.horizontal, 20)
                                     .padding(.top, 10)
                             })
@@ -55,7 +56,7 @@ struct MediaDetailView: View {
                                     .overlay(
                                         ZStack {
                                             RoundedRectangle(cornerRadius: 33)
-                                                .stroke(Color("Alizarin"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
+                                                .stroke(Color("SwanWhite"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
                                         }
                                     )
                                     .padding(.horizontal, 20)
@@ -69,7 +70,7 @@ struct MediaDetailView: View {
                 }
             }
             .navigationBarTitle(media.name, displayMode: .inline)
-            .navigationBarColor(UIColor(named: "MintLeaf"))
+            .navigationBarColor(UIColor(named: "DraculaOrchid"))
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text(media.name)
