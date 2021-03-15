@@ -22,7 +22,10 @@ struct MovieSeriesView: View {
                     .tabItem{
                         Label("Series", systemImage: "play.tv.fill")
                     }
+                    
             }
+            
+            
         }
         .accentColor(Color("Clouds"))
         .onAppear {

@@ -43,7 +43,9 @@ struct MediaDetailView: View {
                                         .padding(.horizontal, 20)
                                         .padding(.top, 10)
                                         
+                                        
                                 })
+                                
                                 
                             
                         }
@@ -75,15 +77,21 @@ struct MediaDetailView: View {
                 }
                 .navigationBarTitle(media.name, displayMode: .inline)
                 .navigationBarColor(.black)
+                
                 .toolbar {
                     ToolbarItem(placement: .principal) {
                         Text(media.name)
                             .font(.Roboto(size: 24))
-                            .foregroundColor(Color("DraculaOrchid"))
+                            .foregroundColor(Color("Clouds"))
+                            
                     }
+                    
             }
+                
             }
+            
         }
+        
     }
 }
 
