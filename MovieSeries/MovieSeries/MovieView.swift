@@ -12,9 +12,11 @@ struct MovieView: View {
     @StateObject var media: MediaModel
     
     var body: some View {
+        
         GeometryReader { geo in
+            
             ZStack {
-                Color(.black)
+                Color("DraculaOrchid")
                 VStack {
                     VStack {
                         Text("Movies")

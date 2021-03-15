@@ -15,7 +15,7 @@ struct MediaDetailView: View {
         GeometryReader { geo in
             
             ZStack {
-                Color(.black)
+                Color("DraculaOrchid")
                 VStack {
                     ScrollView(.vertical, showsIndicators: false) {
                         VStack {
@@ -39,7 +39,7 @@ struct MediaDetailView: View {
                                         .font(.Roboto(size: 20))
                                         .foregroundColor(Color("SwanWhite"))
                                         .multilineTextAlignment(.center)
-                                        .background(Color("DraculaOrchid"))
+                                    
                                         .padding(.horizontal, 20)
                                         .padding(.top, 10)
                                         
@@ -62,7 +62,7 @@ struct MediaDetailView: View {
                                         .overlay(
                                             ZStack {
                                                 RoundedRectangle(cornerRadius: 33)
-                                                    .stroke(Color(.black), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
+                                                    .stroke(Color("DraculaOrchid"), style: StrokeStyle(lineWidth: 10, lineCap:  .round, lineJoin: .round))
                                             }
                                         )
                                         .padding(.horizontal, 20)
@@ -86,11 +86,17 @@ struct MediaDetailView: View {
                             
                     }
                     
+                    
             }
                 
+                
+                
             }
+            .edgesIgnoringSafeArea(.bottom)
+            
             
         }
+        
         
     }
 }

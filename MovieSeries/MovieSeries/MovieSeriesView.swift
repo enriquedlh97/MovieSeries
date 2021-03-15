@@ -29,7 +29,7 @@ struct MovieSeriesView: View {
         }
         .accentColor(Color("Clouds"))
         .onAppear {
-           UITabBar.appearance().barTintColor = UIColor(Color("DraculaOrchid"))
+            UITabBar.appearance().barTintColor = UIColor(Color(.black))
         }
     }
 }
