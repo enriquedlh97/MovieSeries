@@ -14,12 +14,12 @@ struct SeriesView: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                Color("BelizeHole")
+                Color(.black)
                 VStack {
                     VStack {
-                        Text("Movies")
+                        Text("Series")
                             .font(.Roboto(size: 48))
-                            .foregroundColor(Color("GreenSee"))
+                            .foregroundColor(Color("Clouds"))
                             .padding(.top, 40)
                     }
                     VStack {
